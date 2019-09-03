@@ -1,7 +1,7 @@
     
 *** Settings ***
 Suite Setup         Open Obstacle Browser
-#Suite Teardown      Close All Browsers
+Suite Teardown      Close All Browsers
 
 Test Setup          Go To Obstacle
 Test Teardown       Verify Complite
