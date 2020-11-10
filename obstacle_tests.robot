@@ -102,7 +102,7 @@ LOTS OF ROWS
 
 TABLE SEARCH    # EI-VALMIS
     [Tags]  41036   EI-VALMIS   #Xpath ei jostain syystä toimi automaatiossa
-    ${result}   Run Keyword And Return Status   Wait Until Page Contains Element    xpaht=//table//td[contains(.,"15")]
+    ${result}   Run Keyword And Return Status   table should contain    randomTable     15
     Input Text   id=resulttext   ${result}
 
 MEETING SCHEDULER
