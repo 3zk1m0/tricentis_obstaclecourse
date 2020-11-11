@@ -100,9 +100,9 @@ LOTS OF ROWS
     Input Text  id=rowcount    ${count}
     Click Element   id=sample
 
-TABLE SEARCH    # EI-VALMIS
-    [Tags]  41036   EI-VALMIS   #Xpath ei jostain syystä toimi automaatiossa
-    ${result}   Run Keyword And Return Status   Wait Until Page Contains Element    xpaht=//table//td[contains(.,"15")]
+TABLE SEARCH
+    [Tags]  41036
+    ${result}   Run Keyword And Return Status   Table Should Contain    id=randomTable     15
     Input Text   id=resulttext   ${result}
 
 MEETING SCHEDULER
